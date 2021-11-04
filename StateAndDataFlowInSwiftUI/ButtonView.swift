@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ButtonView: View {
-    
+    //let timer: TimeCounter
+    let action: () -> Void
     var body: some View {
-        Button(action: {  }) {
+        Button(action: { action() }) {
             Text("Start")
                 .font(.title)
                 .fontWeight(.bold)
@@ -28,7 +29,7 @@ struct ButtonView: View {
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView()
+        ButtonView(action: {})
     }
 }
 
