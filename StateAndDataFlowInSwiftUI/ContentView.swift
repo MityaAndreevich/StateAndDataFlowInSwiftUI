@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var tapCount = 0
     
     var body: some View {
         VStack {
-            Text("\(tapCount)")
+            Text("3")
                 .font(.largeTitle)
                 .padding(.top, 100)
             Spacer()
-            ButtonView(tapCount: $tapCount)
+            ButtonView()
             Spacer()
         }
     }
