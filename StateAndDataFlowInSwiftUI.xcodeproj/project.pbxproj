@@ -15,6 +15,7 @@
 		5F6FFAA5273466050093F0C0 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6FFAA4273466050093F0C0 /* TimeCounter.swift */; };
 		5F6FFAA7273552E10093F0C0 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6FFAA6273552E10093F0C0 /* RegisterView.swift */; };
 		5F6FFAA9273554890093F0C0 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6FFAA8273554890093F0C0 /* UserManager.swift */; };
+		5F6FFAAB273559850093F0C0 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6FFAAA273559850093F0C0 /* StarterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5F6FFAA4273466050093F0C0 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		5F6FFAA6273552E10093F0C0 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		5F6FFAA8273554890093F0C0 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		5F6FFAAA273559850093F0C0 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				5F6FFA94273445900093F0C0 /* StateAndDataFlowInSwiftUIApp.swift */,
+				5F6FFAAA273559850093F0C0 /* StarterView.swift */,
+				5F6FFAA6273552E10093F0C0 /* RegisterView.swift */,
 				5F6FFA96273445900093F0C0 /* ContentView.swift */,
 				5F6FFAA2273460AB0093F0C0 /* ButtonView.swift */,
 				5F6FFAA4273466050093F0C0 /* TimeCounter.swift */,
-				5F6FFAA6273552E10093F0C0 /* RegisterView.swift */,
 				5F6FFAA8273554890093F0C0 /* UserManager.swift */,
 				5F6FFA98273445900093F0C0 /* Assets.xcassets */,
 				5F6FFA9A273445900093F0C0 /* Preview Content */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F6FFAAB273559850093F0C0 /* StarterView.swift in Sources */,
 				5F6FFAA9273554890093F0C0 /* UserManager.swift in Sources */,
 				5F6FFA97273445900093F0C0 /* ContentView.swift in Sources */,
 				5F6FFAA7273552E10093F0C0 /* RegisterView.swift in Sources */,
