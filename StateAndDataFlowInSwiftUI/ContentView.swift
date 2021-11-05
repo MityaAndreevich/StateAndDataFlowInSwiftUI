@@ -16,7 +16,10 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .padding(.top, 100)
             Spacer()
-            ButtonView(action: timer.startTimer)
+            ButtonView(
+                buttonTitle: timer.buttonTitle,
+                action: timer.startTimer
+            )
             Spacer()
         }
     }
