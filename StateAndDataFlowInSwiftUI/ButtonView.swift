@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ButtonView: View {
-    //let timer: TimeCounter
+    //ObservedObject var timer: TimeCounter
     let action: () -> Void
     var body: some View {
         Button(action: { action() }) {

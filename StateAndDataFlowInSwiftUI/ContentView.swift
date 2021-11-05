@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    private let timer = TimeCounter()
+    @StateObject private var timer = TimeCounter()
     
     var body: some View {
         VStack {
