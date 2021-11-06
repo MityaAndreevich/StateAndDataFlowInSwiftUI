@@ -43,25 +43,13 @@ struct RegisterView: View {
     }
     
     private func setColorForCharCounter() -> Color {
-        let color: Color
-        if userName.count >= 0 && userName.count < 3 {
-            color = .red
+        let color: Color = (0...2).contains(userName.count) ? .red : .green
             return color
-        } else {
-            color = .green
-            return color
-        }
     }
     
     private func setOkButtonAvailability() -> Bool {
-        let bool: Bool
-        if userName.count >= 0 && userName.count < 3 {
-            bool = true
-            return bool
-        } else {
-            bool = false
-            return bool
-        }
+        let bool: Bool = (0...2).contains(userName.count) ? true : false
+        return bool
     }
 }
 
