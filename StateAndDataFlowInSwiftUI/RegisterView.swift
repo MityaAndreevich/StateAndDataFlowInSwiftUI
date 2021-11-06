@@ -9,7 +9,9 @@ import SwiftUI
 
 struct RegisterView: View {
     @State private var userName = ""
+    
     @EnvironmentObject private var user: UserManager
+    @EnvironmentObject private var userStorage: StorageManager
     
     var body: some View {
         VStack {
@@ -34,11 +36,14 @@ struct RegisterView: View {
         if !userName.isEmpty {
             user.name = userName
             user.isRegistered.toggle()
+            
+            userStorage.name = user.name
+            userStorage.isRegistered = user.isRegistered
         }
     }
     
     private func setColorForCharCounter() -> Color {
-        var color = Color.red
+        let color: Color
         if userName.count >= 0 && userName.count < 3 {
             color = .red
             return color
@@ -49,7 +54,7 @@ struct RegisterView: View {
     }
     
     private func setOkButtonAvailability() -> Bool {
-        var bool: Bool
+        let bool: Bool
         if userName.count >= 0 && userName.count < 3 {
             bool = true
             return bool
