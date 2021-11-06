@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ButtonView: View {
     //@ObservedObject var timer: TimeCounter
+    let color: Color
     let buttonTitle: String
     let action: () -> Void
     var body: some View {
@@ -19,7 +20,7 @@ struct ButtonView: View {
                 .foregroundColor(.white)
         }
         .frame(width: 200, height: 60)
-        .background(Color.red)
+        .background(color)
         .cornerRadius(20)
         .overlay(
             RoundedRectangle(cornerRadius: 20)
@@ -30,7 +31,7 @@ struct ButtonView: View {
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(buttonTitle: "Start", action: {})
+        ButtonView(color: .red, buttonTitle: "Start", action: {})
     }
 }
 

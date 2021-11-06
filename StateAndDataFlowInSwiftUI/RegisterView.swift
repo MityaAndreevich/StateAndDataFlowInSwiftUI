@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @State private var userName = ""
+    //@State private var userName = ""
     @EnvironmentObject private var user: UserManager
     
     var body: some View {
         VStack {
-            TextField("Enter Your name...", text: $userName)
-                .multilineTextAlignment(.center)
+            HStack {
+                TextField("Enter Your name...", text: $userName)
+                    .multilineTextAlignment(.center)
+                Text("\(userName.count)")
+            }
             Button(action: registerUser) {
                 HStack {
                     Image(systemName: "checkmark.circle")
@@ -22,6 +25,7 @@ struct RegisterView: View {
                 }
             }
         }
+        .padding()
     }
     
     private func registerUser() {
