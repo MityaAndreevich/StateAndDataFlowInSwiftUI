@@ -24,6 +24,7 @@ struct RegisterView: View {
                     Image(systemName: "checkmark.circle")
                     Text("Ok")
                 }
+                .disabled(setOkButtonAvailability())
             }
         }
         .padding()
@@ -44,6 +45,17 @@ struct RegisterView: View {
         } else {
             color = .green
             return color
+        }
+    }
+    
+    private func setOkButtonAvailability() -> Bool {
+        var bool: Bool
+        if userName.count >= 0 && userName.count < 3 {
+            bool = true
+            return bool
+        } else {
+            bool = false
+            return bool
         }
     }
 }
