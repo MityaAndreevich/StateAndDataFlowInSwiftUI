@@ -11,8 +11,6 @@ struct ContentView: View {
     @StateObject private var timer = TimeCounter()
     @EnvironmentObject private var userManager: UserManager
     
-    //@AppStorage("name") var userName = ""
-    
     var body: some View {
         VStack {
             Text("Hi, \(userManager.name)")
@@ -31,7 +29,10 @@ struct ContentView: View {
             ButtonView(
                 color: .blue,
                 buttonTitle: "Log out",
-                action: {}
+                action: {
+                    userManager.name = ""
+                    userManager.isRegistered = false
+                }
             )
                 .padding(.bottom, 20)
         }
